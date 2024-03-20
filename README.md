@@ -25,14 +25,14 @@ The 3040Crypto Wallet API enables users to interact with their cryptocurrency wa
 
 ### Initiate Transfer
 
-- *Endpoint:* /wallet/transfer
-- *Method:* POST
-- *Parameters:* (in the request body)
-  - fromWalletId: Sender's wallet identifier.
-  - toWalletId: Recipient's wallet identifier.
-  - amount: Amount of cryptocurrency to transfer.
-  - currency: Type of cryptocurrency to transfer.
-- *Description:* Executes a transfer of a specified amount of cryptocurrency from one wallet to another.
+- **Endpoint:** `/wallet/transfer`
+- **Method:** `POST`
+- **Parameters:** (in the request body)
+  - `fromWalletId`: Sender's wallet identifier.
+  - `toWalletId`: Recipient's wallet identifier.
+  - `amount`: Amount of cryptocurrency to transfer.
+  - `currency`: Type of cryptocurrency to transfer.
+- **Description:** Executes a transfer of a specified amount of cryptocurrency from one wallet to another.
 
 ## Description of Resources
 
@@ -76,23 +76,23 @@ The 3040Crypto Wallet API enables users to interact with their cryptocurrency wa
   }
 
 }
-
-
+```
 
 ## Sample Request with Sample Response
 
 ### Get Wallet Balance Request
 
-- *Request:* GET /wallet/balance?walletId=123456
+- **Request:** `GET /wallet/balance?walletId=123456`
 
 ### Sample Response
 
-json
+```json
 {
   "walletId": "123456",
   "balance": {
     "BTC": 0.5,
     "ETH": 2.0,
-    "LTC": 5.5
-  }
+    "LTC": 5.5
+  }
 }
+```
