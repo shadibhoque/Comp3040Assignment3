@@ -36,7 +36,7 @@ The 3040Crypto Wallet API enables users to interact with their cryptocurrency wa
 
 ## Description of Resources
 
-json
+```json
 
 {
   
