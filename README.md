@@ -77,6 +77,8 @@ The 3040Crypto Wallet API enables users to interact with their cryptocurrency wa
 
 }
 
+
+
 ## Sample Request with Sample Response
 
 ### Get Wallet Balance Request
@@ -94,5 +96,3 @@ json
     "LTC": 5.5
   }
 }
-
-
