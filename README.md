@@ -1,48 +1,24 @@
-# 3040Crypto API
+# 3040Crypto Wallet API
 
-## API description
-This API provides users with real time updates on prices of the cryptocurrencies in their wallet. This also lets the user see the total usable fund they have on their wallet. 
+## API Description
 
+The 3040Crypto Wallet API enables users to interact with their cryptocurrency wallets, allowing them to view balances, access transaction histories, and initiate transfers. This API is designed for seamless integration with the 3040Crypto ecosystem to manage digital assets efficiently.
 
-## List of endpoints with parameters
+## Endpoints and Parameters
 
-## Description of resources - formatted as JSON
+### Get Wallet Balance
 
-{
+•⁠  ⁠*Endpoint:* ⁠ /wallet/balance ⁠
+•⁠  ⁠*Method:* ⁠ GET ⁠
+•⁠  ⁠*Parameters:*
+  - ⁠ walletId ⁠: Unique identifier for the user's wallet.
+•⁠  ⁠*Description:* Retrieves the current balance of the specified wallet in various cryptocurrencies.
 
-  {
-  
-    "user": "A"
-    
-    "wallet": {
-    
-      "crypto_name": "BTC"
-      
-      "rate":___ }
-      
-    }
-    
-  },
-  
-  {
-    
-    "user": "B"
-    
-    "wallet": {
-    
-      "crypto_name": "BTC"
-      
-      "rate":___ 
-      
-      "crypto_name": "ETH"
-      
-      "rate":___ }
-    
-    }
+### Get Transaction History
 
-  }
-
-}
-      
-
-## Sample request with sample response
+•⁠  ⁠*Endpoint:* ⁠ /wallet/transactions ⁠
+•⁠  ⁠*Method:* ⁠ GET ⁠
+•⁠  ⁠*Parameters:*
+  - ⁠ walletId ⁠: Unique identifier for the user's wallet.
+  - ⁠ limit ⁠: Optional parameter to limit the number of returned transactions.
+•⁠  ⁠*Description:* Returns a list of recent transactions for the specified wallet.
