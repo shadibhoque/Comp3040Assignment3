@@ -1,4 +1,4 @@
-# Comp3040Crypto API
+# 3040Crypto API
 
 ## API description
 This API provides users with real time updates on prices of the cryptocurrencies in their wallet. 
