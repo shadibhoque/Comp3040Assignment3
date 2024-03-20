@@ -77,3 +77,22 @@ The 3040Crypto Wallet API enables users to interact with their cryptocurrency wa
 
 }
 
+## Sample Request with Sample Response
+
+### Get Wallet Balance Request
+
+- *Request:* GET /wallet/balance?walletId=123456
+
+### Sample Response
+
+json
+{
+  "walletId": "123456",
+  "balance": {
+    "BTC": 0.5,
+    "ETH": 2.0,
+    "LTC": 5.5
+  }
+}
+
+
